@@ -71,14 +71,115 @@
                 <article class="capability featured"><span>National discovery</span>
                     <h3>One open catalogue of catalogues.</h3>
                     <p>Find Canadian open data across jurisdictions and sectors, with stable metadata and continuous
-                        availability monitoring.</p>
-                    <div class="mini-catalogue" aria-hidden="true">
-            
-                        <div><i class="live"></i> <a href="https://artsdata.ca">Artsdata: pan-Canadian open knowledge graph for the arts</a> <b>CA</b></div>
-                        <div><i></i> Ontario datasets coming soon <b>ON</b></div>
-                        <div><i></i> Quebec datasets coming soon <b>QC</b></div>
-                        <div><i></i> Federal Open Gov datasets coming soon <b>CA</b></div>
+                        availability monitoring. A sample of live feeds connected today through <a
+                            href="https://artsdata.ca">Artsdata</a>, the pan-Canadian open knowledge graph for the
+                        arts:</p>
+                    <div class="dataset-table-wrap">
+                        <table class="dataset-table">
+                            <caption class="sr-only">Live data feeds connected through Artsdata</caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="dt-status"><span class="sr-only">Availability</span></th>
+                                    <th scope="col">Feed</th>
+                                    <th scope="col">Updated</th>
+                                    <th scope="col">Entities</th>
+                                    <th scope="col">Region</th>
+                                    <th scope="col">Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="dt-status"><i class="live" aria-hidden="true"></i><span
+                                            class="sr-only">Live</span></td>
+                                    <td><a class="download-graph"
+                                            href="https://db.artsdata.ca/repositories/artsdata/rdf-graphs/service?graph=http%3A%2F%2Fkg.artsdata.ca%2Fcapacoa%2Fartsdata-planet-spektrix%2Fspektrix-calgaryphil"
+                                            data-filename="spektrix-calgaryphil" title="Download JSON-LD">Calgary
+                                            Philharmonic (Spektrix)</a></td>
+                                    <td data-updated="spektrix-calgaryphil">2026-08-24</td>
+                                    <td>81</td>
+                                    <td>AB</td>
+                                    <td>Calgary Philharmonic Orchestra performance listings via Spektrix ticketing
+                                        integration.</td>
+                                </tr>
+                                <tr>
+                                    <td class="dt-status"><i class="live" aria-hidden="true"></i><span
+                                            class="sr-only">Live</span></td>
+                                    <td><a class="download-graph"
+                                            href="https://db.artsdata.ca/repositories/artsdata/rdf-graphs/service?graph=http%3A%2F%2Fkg.artsdata.ca%2Fculture-creates%2Fartsdata-planet-nac%2Fnac-events"
+                                            data-filename="nac-events" title="Download JSON-LD">National
+                                            Arts Centre</a></td>
+                                    <td data-updated="nac-events">2026-08-25</td>
+                                    <td>929</td>
+                                    <td>ON</td>
+                                    <td>National Arts Centre event, artist and venue listings, Ottawa.</td>
+                                </tr>
+                                <tr>
+                                    <td class="dt-status"><i class="live" aria-hidden="true"></i><span
+                                            class="sr-only">Live</span></td>
+                                    <td><a class="download-graph"
+                                            href="https://db.artsdata.ca/repositories/artsdata/rdf-graphs/service?graph=http%3A%2F%2Fkg.artsdata.ca%2Fculture-creates%2Fartsdata-planet-ville-de-laval%2Fcalendrier-activites"
+                                            data-filename="calendrier-activites" title="Download JSON-LD">Ville
+                                            de Laval — Calendrier des activités</a></td>
+                                    <td data-updated="calendrier-activites">2026-06-08</td>
+                                    <td>247</td>
+                                    <td>QC</td>
+                                    <td>City of Laval's public activities calendar, published via Données Québec.</td>
+                                </tr>
+                                <tr>
+                                    <td class="dt-status"><i class="live" aria-hidden="true"></i><span
+                                            class="sr-only">Live</span></td>
+                                    <td><a class="download-graph"
+                                            href="https://db.artsdata.ca/repositories/artsdata/rdf-graphs/service?graph=http%3A%2F%2Fkg.artsdata.ca%2Fculture-creates%2Fartsdata-orion%2Fculturegaspesie-org"
+                                            data-filename="culturegaspesie-org" title="Download JSON-LD">Culture
+                                            Gaspésie</a></td>
+                                    <td data-updated="culturegaspesie-org">2026-08-25</td>
+                                    <td>2,481</td>
+                                    <td>QC</td>
+                                    <td>Cultural events and organizations across the Gaspésie region, Quebec.</td>
+                                </tr>
+                                <tr>
+                                    <td class="dt-status"><i class="live" aria-hidden="true"></i><span
+                                            class="sr-only">Live</span></td>
+                                    <td><a class="download-graph"
+                                            href="https://db.artsdata.ca/repositories/artsdata/rdf-graphs/service?graph=http%3A%2F%2Fkg.artsdata.ca%2Fcapacoa%2Fartsdata-planet-scenesfrancophones%2Fscenesfrancophones-ca"
+                                            data-filename="scenesfrancophones-ca" title="Download JSON-LD">Scènes
+                                            francophones</a></td>
+                                    <td data-updated="scenesfrancophones-ca">2026-08-24</td>
+                                    <td>2,462</td>
+                                    <td>CA</td>
+                                    <td>Francophone performing-arts events and venues, published via CAPACOA.</td>
+                                </tr>
+                                <tr>
+                                    <td class="dt-status"><i class="live" aria-hidden="true"></i><span
+                                            class="sr-only">Live</span></td>
+                                    <td><a class="download-graph"
+                                            href="https://db.artsdata.ca/repositories/artsdata/rdf-graphs/service?graph=http%3A%2F%2Fkg.artsdata.ca%2Fculture-creates%2Fartsdata-planet-atc%2Ftour-bookings"
+                                            data-filename="tour-bookings" title="Download JSON-LD">Arts
+                                            Touring Connector</a></td>
+                                    <td data-updated="tour-bookings">2026-08-24</td>
+                                    <td>3,132</td>
+                                    <td>CA</td>
+                                    <td>Performing-arts touring and booking data shared across presenters nationally.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="dt-status"><i class="live" aria-hidden="true"></i><span
+                                            class="sr-only">Live</span></td>
+                                    <td><a class="download-graph"
+                                            href="https://db.artsdata.ca/repositories/artsdata/rdf-graphs/service?graph=http%3A%2F%2Fkg.artsdata.ca%2Fculture-creates%2Fartsdata-planet-osac%2Fvisual-media-arts"
+                                            data-filename="visual-media-arts" title="Download JSON-LD">Organization
+                                            of Saskatchewan Arts Councils</a></td>
+                                    <td data-updated="visual-media-arts">2026-08-18</td>
+                                    <td>421</td>
+                                    <td>SK</td>
+                                    <td>Visual and media arts organizations and events across Saskatchewan.</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
+                    <br>
+                    <p class="dataset-table-more"><a href="https://kg.artsdata.ca/query/show?sparql=feeds_all&amp;title=Data+Feeds"
+                            target="_blank" rel="noopener">Browse all Artsdata data feeds ↗</a></p>
                 </article>
                 <article class="capability"><span>Semantic interoperability</span>
                     <h3>Different systems. Shared meaning.</h3>
@@ -234,6 +335,26 @@
             <p>Backed by <a href="https://culturecreates.com/">Culture Creates ↗</a></p>
         </footer>
     </main>
+    <script>
+        document.querySelectorAll('.download-graph').forEach(function (link) {
+            link.addEventListener('click', function (event) {
+                event.preventDefault();
+                fetch(link.href, { headers: { Accept: 'application/ld+json' } })
+                    .then(function (response) { return response.blob(); })
+                    .then(function (blob) {
+                        var objectUrl = URL.createObjectURL(blob);
+                        var temp = document.createElement('a');
+                        temp.href = objectUrl;
+                        temp.download = link.dataset.filename + '.jsonld';
+                        document.body.appendChild(temp);
+                        temp.click();
+                        temp.remove();
+                        URL.revokeObjectURL(objectUrl);
+                    })
+                    .catch(function () { window.open(link.href, '_blank'); });
+            });
+        });
+    </script>
 </body>
 
 </html>

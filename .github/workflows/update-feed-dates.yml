@@ -1,0 +1,31 @@
+name: Refresh Artsdata feed dates
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-dates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Update feed dates
+        run: python3 scripts/update_feed_dates.py
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet -- docs/index.html; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/index.html
+          git commit -m "Refresh Artsdata feed dates"
+          git push

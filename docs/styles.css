@@ -438,49 +438,108 @@ nav {
 }
 
 .capability.featured {
-    background: #dce9df
+    background: #dce9df;
+    grid-column: 1 / -1
 }
 
-.mini-catalogue {
-    width: 100%;
-    margin: 26px 0 -12px;
-    background: var(--white);
-    border: 1px solid var(--line)
+.capability.featured p {
+    max-width: none
 }
 
-.mini-catalogue div {
-    display: grid;
-    grid-template-columns: 9px 1fr auto;
-    gap: 10px;
-    align-items: center;
-    padding: 12px 14px;
-    border-bottom: 1px solid var(--line);
-    font-size: 11px
-}
-
-.mini-catalogue div:last-child {
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
     border: 0
 }
 
-.mini-catalogue i {
+.dataset-table-wrap {
+    width: 100%;
+    margin: 26px 0 -12px;
+    background: var(--white);
+    border: 1px solid var(--line);
+    overflow-x: auto
+}
+
+.dataset-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+    white-space: nowrap
+}
+
+.dataset-table th,
+.dataset-table td {
+    padding: 11px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--line)
+}
+
+.dataset-table thead th {
+    font-size: 9px;
+    font-weight: 750;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--green);
+    border-bottom: 1px solid var(--ink)
+}
+
+.dataset-table tbody tr:last-child td {
+    border-bottom: 0
+}
+
+.dataset-table td:last-child,
+.dataset-table th:last-child {
+    white-space: normal;
+    min-width: 220px;
+    color: #4b5e5a
+}
+
+.dataset-table a {
+    border-bottom: 1px solid var(--line)
+}
+
+.dataset-table a:hover {
+    border-color: var(--green)
+}
+
+.dt-status {
+    width: 14px
+}
+
+.dataset-table-more {
+    margin: 14px 0 0;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 700
+}
+
+.dataset-table-more a {
+    border-bottom: 1px solid;
+    padding-bottom: 3px
+}
+
+.dataset-table i {
+    display: block;
     width: 7px;
     height: 7px;
     background: var(--red);
     border-radius: 50%
 }
 
-.mini-catalogue i.live {
+.dataset-table i.live {
     background: var(--green)
-}
-
-.mini-catalogue b {
-    color: var(--green);
-    font-size: 9px
 }
 
 .capability.dark-card {
     background: var(--deep);
-    color: var(--white)
+    color: var(--white);
+    grid-column: 1 / -1
 }
 
 .capability.dark-card p {
