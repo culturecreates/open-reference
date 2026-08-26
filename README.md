@@ -2,11 +2,9 @@
 
 Public website for Open Reference, Canada’s open data reference layer.
 
-## Publish with GitHub Pages
+## GitHub Pages
 
-1. In the GitHub repository, open **Settings → Pages**.
-2. Under **Build and deployment**, select **GitHub Actions**.
-3. Push to `main`, or run **Deploy Open Reference to GitHub Pages** manually.
+The site deploys automatically from `main` using the **Deploy Open Reference to GitHub Pages** workflow.
 
 The static entry point is `docs/index.html`. The deployment workflow generates
 `docs/styles.css` from the shared visual system in `app/globals.css`.
