@@ -32,6 +32,10 @@ def fetch_updated_date(graph_uri: str) -> str:
 
         data = json.load(response)
     generated_at = data["generatedAtTime"]
+    if isinstance(generated_at, list):
+        generated_at = max(generated_at)
+    if not isinstance(generated_at, str):
+        raise ValueError("generatedAtTime must contain a timestamp string")
     return generated_at[:10]  # YYYY-MM-DD
 
 
