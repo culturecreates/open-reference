@@ -31,7 +31,13 @@ def fetch_updated_date(graph_uri: str) -> str:
         import json
 
         data = json.load(response)
-    generated_at = data["generatedAtTime"]
+
+    generated_at = data.get("generatedAtTime")
+    if isinstance(generated_at, list):
+        generated_at = generated_at[0]
+    if not isinstance(generated_at, str):
+        raise ValueError(f"Unexpected generatedAtTime format: {generated_at!r}")
+
     return generated_at[:10]  # YYYY-MM-DD
 
 
